@@ -25,7 +25,9 @@
 
 提供预测函数对字符图像进行分类识别，识别结果如下：
 ![image](https://github.com/user-attachments/assets/0a21863c-d551-4d7c-9109-d261678cb9f0)
-![image](https://github.com/user-attachments/assets/0a21863c-d551-4d7c-9109-d261678cb9f0)
+![image](https://github.com/user-attachments/assets/1162e663-9a73-453d-95d2-28bb4a3ad594)
+
+
 
 
 
