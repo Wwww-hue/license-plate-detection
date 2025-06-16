@@ -64,7 +64,10 @@ svm.dat / svmchinese.dat：训练得到的模型参数。
 ![image](https://github.com/user-attachments/assets/70d8b5a7-25b2-446e-a227-9cbc0629f9b6)
 
 # 部署方式
-
+## Python 版本
+- Python 3.8 及以上
+## 依赖安装
+所依赖的库均在requirements.txt中指出
 
 
 
