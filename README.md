@@ -27,9 +27,45 @@
 ![image](https://github.com/user-attachments/assets/1162e663-9a73-453d-95d2-28bb4a3ad594)
 
 ## 主程序gui模块
-
+```
+│   surface.py
+```
 此模块使用 Tkinter 创建图形化界面，用于展示项目功能，如图所示：
 ![image](https://github.com/user-attachments/assets/43a18f6e-8181-4aa5-8d92-4719419e25a5)
+
+## 配置模块
+```
+│   config.js
+```
+此模块存储图像处理和识别过程中的参数（如尺寸阈值、颜色筛选等），通过 JSON 格式便于修改和读取。
+
+## 数据资源模块
+```
+│   svm.dat
+│   svmchinese.dat
+├───train
+│   ├───chars2
+│   └───charsChinese
+├───test_image
+```
+train：字符图像训练数据集；
+
+test_image：用于测试的车牌图像；
+
+svm.dat / svmchinese.dat：训练得到的模型参数。
+
+## 构建与发布模块
+```
+├───build
+├───dist
+```
+将整个项目打包为桌面应用程序，无需 Python 环境即可运行。点击dist文件夹里的surface.exe即可运行。
+如图：
+![image](https://github.com/user-attachments/assets/70d8b5a7-25b2-446e-a227-9cbc0629f9b6)
+
+# 部署方式
+
+
 
 
 
