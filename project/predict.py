@@ -245,11 +245,7 @@ class CardPredictor:
             self.modelchinese.train(chars_train, chars_label)
 
 
-    # def save_traindata(self):
-    #     if not os.path.exists("svm.dat"):
-    #         self.model.save("svm.dat")
-    #     if not os.path.exists("svmchinese.dat"):
-    #         self.modelchinese.save("svmchinese.dat")
+
     def save_traindata(self):
         if self.model is not None:
             self.model.save("svm.dat")
@@ -315,7 +311,6 @@ class CardPredictor:
             img = cv2.GaussianBlur(img, (blur, blur), 0)  # 图片分辨率调整
         oldimg = img
         img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-        # equ = cv2.equalizeHist(原始图片)
         # 原始图片 = np.hstack((原始图片, equ))
         # 去掉图像中不会是车牌的区域
         kernel = np.ones((20, 20), np.uint8)
