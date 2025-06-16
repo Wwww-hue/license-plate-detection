@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/f1d56775-b56d-408f-b678-737aeaf1d7d1)![image](https://github.com/user-attachments/assets/f1d56775-b56d-408f-b678-737aeaf1d7d1)
+![image](https://github.com/user-attachments/assets/55153408-2478-4fc5-b2e9-833f370e5684)![image](https://github.com/user-attachments/assets/55153408-2478-4fc5-b2e9-833f370e5684)![image](https://github.com/user-attachments/assets/f1d56775-b56d-408f-b678-737aeaf1d7d1)![image](https://github.com/user-attachments/assets/f1d56775-b56d-408f-b678-737aeaf1d7d1)
 # 项目介绍
 本项目基于 Tkinter 和 OpenCV，采用 HOG 特征提取与 SVM 分类器的传统机器学习方法，构建了一个完整的车牌识别系统：支持从原始图像中识别车牌区域，分割并识别车牌字符，输出准确的车牌号码与颜色。
 并集成了基础图像处理模块。
@@ -26,6 +26,13 @@
 提供预测函数对字符图像进行分类识别，识别结果如下：
 ![image](https://github.com/user-attachments/assets/0a21863c-d551-4d7c-9109-d261678cb9f0)
 ![image](https://github.com/user-attachments/assets/1162e663-9a73-453d-95d2-28bb4a3ad594)
+
+## 主程序gui模块
+此模块使用 Tkinter 创建图形化界面，用于展示项目功能，如图所示：
+![image](https://github.com/user-attachments/assets/43a18f6e-8181-4aa5-8d92-4719419e25a5)
+
+
+
 
 
 
