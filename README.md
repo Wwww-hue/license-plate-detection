@@ -68,7 +68,9 @@ svm.dat / svmchinese.dat：训练得到的模型参数。
 - Python 3.8 及以上
 ## 依赖安装
 所依赖的库均在requirements.txt中指出
-
+## 启动
+安装压缩包后，进入dist\surface直接运行surface.exe即可；或者直接在Python环境中运行surface.py
+- 注意项目的保存路径必须是英文，不能出现中文，否则会运行失败！
 
 
 
