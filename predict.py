@@ -9,7 +9,40 @@ SZ=20  # 宽×高  # 训练图片长宽
 MAX_WIDTH = 1000  # 原始图片最大宽度
 Min_Area = 2000  # 车牌区域允许最大面积
 PROVINCE_START = 1000
-
+# 不能保证包括所有省份
+provinces = [
+    "zh_cuan", "川",
+    "zh_e", "鄂",
+    "zh_gan", "赣",
+    "zh_gan1", "甘",
+    "zh_gui", "贵",
+    "zh_gui1", "桂",
+    "zh_hei", "黑",
+    "zh_hu", "沪",
+    "zh_ji", "冀",
+    "zh_jin", "津",
+    "zh_jing", "京",
+    "zh_jl", "吉",
+    "zh_liao", "辽",
+    "zh_lu", "鲁",
+    "zh_meng", "蒙",
+    "zh_min", "闽",
+    "zh_ning", "宁",
+    "zh_qing", "靑",
+    "zh_qiong", "琼",
+    "zh_shan", "陕",
+    "zh_su", "苏",
+    "zh_sx", "晋",
+    "zh_wan", "皖",
+    "zh_xiang", "湘",
+    "zh_xin", "新",
+    "zh_yu", "豫",
+    "zh_yu1", "渝",
+    "zh_yue", "粤",
+    "zh_yun", "云",
+    "zh_zang", "藏",
+    "zh_zhe", "浙"
+]
 
 # 读取图片文件
 def imreadex(filename):
@@ -88,43 +121,6 @@ def preprocess_hog(digits):
 
         samples.append(hist)
     return np.float32(samples)
-
-
-
-# 不能保证包括所有省份
-provinces = [
-    "zh_cuan", "川",
-    "zh_e", "鄂",
-    "zh_gan", "赣",
-    "zh_gan1", "甘",
-    "zh_gui", "贵",
-    "zh_gui1", "桂",
-    "zh_hei", "黑",
-    "zh_hu", "沪",
-    "zh_ji", "冀",
-    "zh_jin", "津",
-    "zh_jing", "京",
-    "zh_jl", "吉",
-    "zh_liao", "辽",
-    "zh_lu", "鲁",
-    "zh_meng", "蒙",
-    "zh_min", "闽",
-    "zh_ning", "宁",
-    "zh_qing", "靑",
-    "zh_qiong", "琼",
-    "zh_shan", "陕",
-    "zh_su", "苏",
-    "zh_sx", "晋",
-    "zh_wan", "皖",
-    "zh_xiang", "湘",
-    "zh_xin", "新",
-    "zh_yu", "豫",
-    "zh_yu1", "渝",
-    "zh_yue", "粤",
-    "zh_yun", "云",
-    "zh_zang", "藏",
-    "zh_zhe", "浙"
-]
 
 
 class StatModel(object):
